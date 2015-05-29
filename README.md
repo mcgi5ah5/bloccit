@@ -5,8 +5,8 @@
 Made with my mentor Levi Kennedy at [Bloc](http://bloc.io).
 
 ```
-Heroku App: anish-bloccit
-URL: https://anish-bloccit.herokuapp.com/
+Heroku App: anishhallan-bloccit
+URL: https://anishhallan-bloccit.herokuapp.com/
 ```
 
 <tt>rake doc:app</tt>.
