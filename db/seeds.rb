@@ -16,6 +16,17 @@
      body: Faker::Lorem.paragraph
    )
  end
+
+  Post.create!(
+     title: 'Assignment',
+     body: 'Welcome to this film'
+    )
+
+  Comment.create!(
+     post_id: 5,
+     body: 'review'
+    )
+
  
  puts "Seed finished"
  puts "#{Post.count} posts created"
