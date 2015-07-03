@@ -3,14 +3,17 @@ class PostsController < ApplicationController
     @posts = Post.all
   end
 
+  #GET /posts/:id
   def show
     @post = Post.find(params[:id])
   end
 
+  
   def new
     @post = Post.new
   end
 
+  # POST /posts
   def create
     @post = Post.new(params.require(:post).permit(:title, :body))
     if @post.save
@@ -22,10 +25,12 @@ class PostsController < ApplicationController
     end
   end
 
+  #GET /posts/:id/edit
   def edit
      @post = Post.find(params[:id])
   end
 
+  #PUT /posts/:id
   def update
      @post = Post.find(params[:id])
      if @post.update_attributes(params.require(:post).permit(:title, :body))
