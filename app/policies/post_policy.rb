@@ -12,6 +12,8 @@ class Scope
   end
 
   def resolve
+    # scope.none == scope.where(id: nil)
+    return scope.none if user.blank? # ruby gives you object.empty? rails gives you object.blank?
     if user.admin? || user.moderator?
       scope.all
     else
