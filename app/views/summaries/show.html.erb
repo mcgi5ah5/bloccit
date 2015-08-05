@@ -2,8 +2,12 @@
 
 <div class="row">
    <div class="col-md-8">
-      <%= @post.each do |post| %>
-      <%= link_to post.title, post %>
+        <%= @summary.description %>
    </div>
 </div>
 
+<% if policy(@summary).update? %>
+  <%= link_to 'Edit Summary', edit_topic_post_summary_path(@topic,@post,@summary), class: 'btn btn-success' %>
+<% end %>
+
+ 
