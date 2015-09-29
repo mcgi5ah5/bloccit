@@ -12,6 +12,8 @@ group :production do
 
  group :development do
    gem 'sqlite3'
+   gem 'binding_of_caller'
+   gem "better_errors"
  end
 
  
@@ -72,6 +74,8 @@ gem 'mini_magick'
 gem 'fog'
 
 gem 'will_paginate', '~> 3.0.5'
+
+
 
 
 
