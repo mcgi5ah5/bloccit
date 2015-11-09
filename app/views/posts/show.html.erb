@@ -1,5 +1,3 @@
-
-
 <div class="row">
   <div class="col-md-8">
     <%= render partial: 'votes/voter', locals: { post: @post } %>
@@ -28,6 +26,7 @@
        <%= pluralize(@post.down_votes, 'down vote') %>
      </small>
    </div>
+   <%= render partial: 'favorites/favorite', locals: { post: @post } %>
     <div class="row">
   <h2>Comments</h2>
     <div class='col-md-12'>
