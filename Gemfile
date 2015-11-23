@@ -59,6 +59,8 @@ group :development, :test do
 
   gem 'rspec-rails', '~> 3.0'
 
+  gem 'capybara'
+
 end
 
 gem 'devise'
@@ -76,6 +78,8 @@ gem 'mini_magick'
 gem 'fog'
 
 gem 'will_paginate', '~> 3.0.5'
+
+
 
 
 
