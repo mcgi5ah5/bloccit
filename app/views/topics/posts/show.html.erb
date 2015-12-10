@@ -29,10 +29,14 @@
    <%= render partial: 'favorites/favorite', locals: { post: @post } %>
     <div class="row">
   <h2>Comments</h2>
+    <div class='js-comments'>
     <div class='col-md-12'>
       <%= render partial: 'comments/comment', collection: @comments %>
+    </div>
+    <div class='new-comment'>
       <% if policy(@comment).create? %>
         <%= render 'comments/form', topic: @topic, comment: @comment, post: @post %>
+      </div>
         <% end %>
       </div>
         </div>
